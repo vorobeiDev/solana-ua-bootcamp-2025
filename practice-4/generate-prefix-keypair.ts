@@ -2,7 +2,7 @@ import { Keypair } from "@solana/web3.js";
 
 const TARGET_PREFIX = "vlad";
 
-function findVanityKey() {
+function findKeyWithPrefix() {
     let tries = 0;
 
     while (true) {
@@ -23,4 +23,4 @@ function findVanityKey() {
     }
 }
 
-findVanityKey();
+findKeyWithPrefix();
